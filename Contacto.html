@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusujor</title>
+    <link rel="stylesheet" href="./css/style-contacto.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/LUSUJOR....png" alt="Logo" class="logo" />
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="AcercaDe.html">Acerca de</a></li>
+            </ul>
+        </nav>
+        <section class="contact-section">
+            <div class="main-content">
+                <div class="form">
+                    <h1>Contacto</h1>
+                    <p>Para más información, no dudes en contactarme:</p>
+
+                    <form action="/enviar-contacto" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferencia">Preferencia de contacto:</label>
+                            <select id="preferencia" name="preferencia" required>
+                                <option value="telefono">Teléfono</option>
+                                <option value="email">Correo electrónico</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Alajuela, Grecia</p>
+            </div>
+            <div class="footer-center">
+                <p><b>© 2024, Derechos Reservados Kisha Ligia Pérez Soto, ISW-512 Diseño de Aplicaciones Web</b></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://wa.me/+50685072408" target="_blank">
+                    <img src="./img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
