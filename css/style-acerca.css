@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Merriweather-Light';
+    src: url('./font/Merriweather-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Merriweather-Light';
+    line-height: 1.6;
+    background-color: #F1EDE2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: #1f211c;
+}
+.logo{
+    width: 13%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+nav{
+    background-color: #7F674D;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+li{
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 100px;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    
+}
+li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #8BA095;
+    transition: width 0.3s ease;
+}
+li a:hover::after{
+    width: 100%;
+}
+#Acerca {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.cuadro{
+    background-color: #7F674D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);; 
+}
+h2{
+    color: white;
+}
+.image {
+    border-radius: 10%; /* Bordes redondos */
+    object-fit: cover; /* La imagen se adaptará para cubrir el contenedor */
+    width: 200px; /* Ajuste automático del ancho */
+    height: 260px; /* Ajuste automático de la altura según el contenedor */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+footer{
+    background-color: #1f211c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
